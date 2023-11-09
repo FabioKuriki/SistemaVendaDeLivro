@@ -64,7 +64,7 @@ namespace SistemaDeVendaLivros
                         Console.Write("Endereço:");
                         string endereco = Console.ReadLine();
                         Console.Write("Telefone:");
-                        string telefone = Console.ReadLine();
+                        int telefone = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Data de Nascimento: ");
                         do
                         {
@@ -97,7 +97,7 @@ namespace SistemaDeVendaLivros
                         login = Console.ReadLine();
                         Console.Write("Senha:");
                         senha = Console.ReadLine();
-                        modelo.Preenchimento(login, senha);
+                        modelo.Preenchimento(login, senha, nome, endereco, telefone, dia, mes, ano);
                         break;
                     case 3:
                         modelo.MostrarVetor();

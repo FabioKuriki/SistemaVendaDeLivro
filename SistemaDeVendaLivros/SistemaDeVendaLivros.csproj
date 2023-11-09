@@ -45,8 +45,10 @@
   <ItemGroup>
     <Compile Include="ControlLivro.cs" />
     <Compile Include="ControlPessoa.cs" />
+    <Compile Include="ControlReserva.cs" />
     <Compile Include="ModelLivro.cs" />
     <Compile Include="ModelPessoa.cs" />
+    <Compile Include="ModelReserva.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

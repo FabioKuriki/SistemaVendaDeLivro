@@ -8,9 +8,16 @@ namespace SistemaDeVendaLivros
 {
     class ModelLivro
     {
+        double soma;
         public ModelLivro()
         {
+            soma = 0;
+        }
 
+        public double Compra(double ValorLivro)
+        {
+            soma = soma + ValorLivro;
+            return soma;
         }
     }
 }
