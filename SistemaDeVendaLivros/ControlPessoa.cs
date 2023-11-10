@@ -10,13 +10,13 @@ namespace SistemaDeVendaLivros
     class ControlPessoa
     {
         ModelPessoa modelo;
-        ControlLivro controleLivro;
         int opcao;
+        ControlLivro controleLivro;
         //Método Construtor
         public ControlPessoa()
         {
-            modelo = new ModelPessoa();
             controleLivro = new ControlLivro();
+            modelo = new ModelPessoa();
             opcao = -1;
         }
         //Fim do Construtor
@@ -33,6 +33,7 @@ namespace SistemaDeVendaLivros
 
         public void Acesso()
         {
+            modelo.EsvaziarVetor();
             do
             {
                 Menu();
@@ -50,7 +51,8 @@ namespace SistemaDeVendaLivros
                         if (modelo.Validacao(login, senha) == true)
                         {
                             Console.Clear();
-                            controleLivro.MenuLivro();
+                            controleLivro.SistemaLivro();
+                            
                         }
                         else
                             Console.WriteLine("Login inválido ou inexistente");
@@ -95,6 +97,15 @@ namespace SistemaDeVendaLivros
                         } while (ano < 0);
                         Console.Write("Login:");
                         login = Console.ReadLine();
+                        if (modelo.ValidacaoLoginExistente(login) == true)
+                        {
+                            while (modelo.ValidacaoLoginExistente(login) == true)
+                            {
+                                Console.WriteLine("Login já existente");
+                                Console.Write("Login:");
+                                login = Console.ReadLine();
+                            }
+                        }
                         Console.Write("Senha:");
                         senha = Console.ReadLine();
                         modelo.Preenchimento(login, senha, nome, endereco, telefone, dia, mes, ano);

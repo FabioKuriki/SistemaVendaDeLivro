@@ -6,3 +6,10 @@ C:\Users\fabio.hkcesare\source\repos\SistemaDeVendaLivros\SistemaDeVendaLivros\o
 C:\Users\fabio.hkcesare\source\repos\SistemaDeVendaLivros\SistemaDeVendaLivros\obj\Debug\SistemaDeVendaLivros.csproj.CoreCompileInputs.cache
 C:\Users\fabio.hkcesare\source\repos\SistemaDeVendaLivros\SistemaDeVendaLivros\obj\Debug\SistemaDeVendaLivros.exe
 C:\Users\fabio.hkcesare\source\repos\SistemaDeVendaLivros\SistemaDeVendaLivros\obj\Debug\SistemaDeVendaLivros.pdb
+C:\Users\Fabio Kuriki\Source\Repos\SistemaVendaDeLivro\SistemaDeVendaLivros\obj\Debug\SistemaDeVendaLivros.csproj.AssemblyReference.cache
+C:\Users\Fabio Kuriki\Source\Repos\SistemaVendaDeLivro\SistemaDeVendaLivros\obj\Debug\SistemaDeVendaLivros.csproj.CoreCompileInputs.cache
+C:\Users\Fabio Kuriki\Source\Repos\SistemaVendaDeLivro\SistemaDeVendaLivros\obj\Debug\SistemaDeVendaLivros.exe
+C:\Users\Fabio Kuriki\Source\Repos\SistemaVendaDeLivro\SistemaDeVendaLivros\obj\Debug\SistemaDeVendaLivros.pdb
+C:\Users\Fabio Kuriki\Source\Repos\SistemaVendaDeLivro\SistemaDeVendaLivros\bin\Debug\SistemaDeVendaLivros.exe.config
+C:\Users\Fabio Kuriki\Source\Repos\SistemaVendaDeLivro\SistemaDeVendaLivros\bin\Debug\SistemaDeVendaLivros.exe
+C:\Users\Fabio Kuriki\Source\Repos\SistemaVendaDeLivro\SistemaDeVendaLivros\bin\Debug\SistemaDeVendaLivros.pdb

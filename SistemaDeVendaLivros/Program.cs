@@ -11,7 +11,6 @@ namespace SistemaDeVendaLivros
         static void Main(string[] args)
         {
             ControlPessoa controle = new ControlPessoa();
-            ControlLivro controleLivro = new ControlLivro();
             controle.Acesso();
             Console.ReadLine();//Manter aberto
         }

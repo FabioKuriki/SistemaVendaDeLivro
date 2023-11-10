@@ -33,9 +33,16 @@ namespace SistemaDeVendaLivros
             login = new string[2];
             senha = new string[2];
             i = 0;
-            
         }
         //Fim do Construtor
+
+        public void EsvaziarVetor()
+        {
+            for(i = 0; i < 2; i++)
+            {
+                id[i] = -1;
+            }
+        }
 
         public void Preenchimento(string login2, string senha2, string nome2, string endereco2, int telefone2, int dia2, int mes2, int ano2)
         {
@@ -55,6 +62,18 @@ namespace SistemaDeVendaLivros
                     break;
                 }
             }
+        }
+
+        public Boolean ValidacaoLoginExistente(string login2)
+        {
+            for(i = 0; i < 2; i++)
+            {
+                if(login2 == login[i])
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         public Boolean Validacao(string login2,string senha2)
