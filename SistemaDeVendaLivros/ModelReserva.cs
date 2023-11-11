@@ -9,10 +9,12 @@ namespace SistemaDeVendaLivros
     class ModelReserva
     {
         int[] id;
-        string[] nome;
+        public string[] nome;
         string[] endereco;
         int[] telefone;
         int i;
+
+        
         public ModelReserva()
         {
             i = 0;
@@ -20,6 +22,7 @@ namespace SistemaDeVendaLivros
             nome = new string[2];
             endereco = new string[2];
             telefone = new int[2];
+            
         }
 
         public void ZerarReserva()

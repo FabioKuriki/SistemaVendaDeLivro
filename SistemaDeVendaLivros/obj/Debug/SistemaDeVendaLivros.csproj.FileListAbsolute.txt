@@ -13,3 +13,11 @@ C:\Users\Fabio Kuriki\Source\Repos\SistemaVendaDeLivro\SistemaDeVendaLivros\obj\
 C:\Users\Fabio Kuriki\Source\Repos\SistemaVendaDeLivro\SistemaDeVendaLivros\bin\Debug\SistemaDeVendaLivros.exe.config
 C:\Users\Fabio Kuriki\Source\Repos\SistemaVendaDeLivro\SistemaDeVendaLivros\bin\Debug\SistemaDeVendaLivros.exe
 C:\Users\Fabio Kuriki\Source\Repos\SistemaVendaDeLivro\SistemaDeVendaLivros\bin\Debug\SistemaDeVendaLivros.pdb
+C:\Users\fabio.hkcesare\source\repos\SistemaVendaDeLivro\SistemaDeVendaLivros\bin\Debug\SistemaDeVendaLivros.exe.config
+C:\Users\fabio.hkcesare\source\repos\SistemaVendaDeLivro\SistemaDeVendaLivros\bin\Debug\SistemaDeVendaLivros.exe
+C:\Users\fabio.hkcesare\source\repos\SistemaVendaDeLivro\SistemaDeVendaLivros\bin\Debug\SistemaDeVendaLivros.pdb
+C:\Users\fabio.hkcesare\source\repos\SistemaVendaDeLivro\SistemaDeVendaLivros\obj\Debug\SistemaDeVendaLivros.csproj.AssemblyReference.cache
+C:\Users\fabio.hkcesare\source\repos\SistemaVendaDeLivro\SistemaDeVendaLivros\obj\Debug\SistemaDeVendaLivros.csproj.SuggestedBindingRedirects.cache
+C:\Users\fabio.hkcesare\source\repos\SistemaVendaDeLivro\SistemaDeVendaLivros\obj\Debug\SistemaDeVendaLivros.csproj.CoreCompileInputs.cache
+C:\Users\fabio.hkcesare\source\repos\SistemaVendaDeLivro\SistemaDeVendaLivros\obj\Debug\SistemaDeVendaLivros.exe
+C:\Users\fabio.hkcesare\source\repos\SistemaVendaDeLivro\SistemaDeVendaLivros\obj\Debug\SistemaDeVendaLivros.pdb

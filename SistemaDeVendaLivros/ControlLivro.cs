@@ -25,7 +25,7 @@ namespace SistemaDeVendaLivros
                               "1. Introdução ao Python - R$10,50\n" +
                               "2. Introdução ao VisualG - R$11,50\n" +
                               "3. Introdução a Banco de Dados - R$25,00\n" +
-                              "4. Finalizar compra: " + "R$" + modeloLivro.Compra(opcao));
+                              "4. Sair ");
             opcao = Convert.ToInt32(Console.ReadLine());
         }
 
@@ -82,7 +82,6 @@ namespace SistemaDeVendaLivros
                         }
                         break;
                     case 4:
-                        Console.WriteLine("Compra realizada");
                         break;
                     default:
                         Console.WriteLine("Escolha uma das opções disponíveis");
@@ -91,6 +90,7 @@ namespace SistemaDeVendaLivros
             }while(opcao != 4);
         }
 
+        //Caso o usuário compre mais de um livro
         public void MaisCompra()
         {
             do
@@ -98,7 +98,7 @@ namespace SistemaDeVendaLivros
                 Console.WriteLine("Gostaria de comprar mais um livro?\n" +
                               "0. Não\n" +
                               "1. Sim");
-            opcao = Convert.ToInt32(Console.ReadLine());
+                opcao = Convert.ToInt32(Console.ReadLine());
 
             
                 switch (opcao)

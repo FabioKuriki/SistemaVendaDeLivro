@@ -20,6 +20,7 @@ namespace SistemaDeVendaLivros
         int[] mes;
         int[] ano;
         int i;
+        string nomeLogado;
         //Método Construtor
         public ModelPessoa()
         {
@@ -36,7 +37,7 @@ namespace SistemaDeVendaLivros
         }
         //Fim do Construtor
 
-        public void EsvaziarVetor()
+        public void EsvaziarVetor()//Todos os IDs ficam com -1 até serem preenchidos
         {
             for(i = 0; i < 2; i++)
             {
@@ -44,6 +45,7 @@ namespace SistemaDeVendaLivros
             }
         }
 
+        //Preenchimento para banco de dados do cadastro
         public void Preenchimento(string login2, string senha2, string nome2, string endereco2, int telefone2, int dia2, int mes2, int ano2)
         {
             for (i = 0; i < 2; i++)
@@ -64,6 +66,7 @@ namespace SistemaDeVendaLivros
             }
         }
 
+        //Validação para que não haja a criação de logins iguais
         public Boolean ValidacaoLoginExistente(string login2)
         {
             for(i = 0; i < 2; i++)
@@ -76,6 +79,7 @@ namespace SistemaDeVendaLivros
             return false;
         }
 
+        //Validação de login para acesso aos livros
         public Boolean Validacao(string login2,string senha2)
         {
             for (i = 0; i < 2; i++)
@@ -89,6 +93,7 @@ namespace SistemaDeVendaLivros
             return false;
         }
 
+        //Teste para ver como os vetores estão preenchidos
         public void MostrarVetor()
         {
             for (i = 0; i < 2; i++)
@@ -103,6 +108,18 @@ namespace SistemaDeVendaLivros
                 Console.WriteLine("Login: " + login[i]);
                 Console.WriteLine("Senha: " + senha[i]);
             }
+        }
+
+        public string ProcuraNome(string login2)
+        {
+            for(i = 0; i < 2; i++)
+            {
+                if(login2 == login[i])
+                {
+                    nomeLogado = nome[i];
+                }
+            }
+            return nomeLogado;
         }
     }
 }

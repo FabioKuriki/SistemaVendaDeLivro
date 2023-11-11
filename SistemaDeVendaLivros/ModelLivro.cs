@@ -30,6 +30,7 @@ namespace SistemaDeVendaLivros
             soma = 0;
         }
 
+        //Controle das quantidades de livros + o calculo da soma / valor total da compra
         public double Compra(int opcao)
         {
             do

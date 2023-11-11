@@ -12,6 +12,7 @@ namespace SistemaDeVendaLivros
         ModelPessoa modelo;
         int opcao;
         ControlLivro controleLivro;
+        public string pessoaLogada;
         //Método Construtor
         public ControlPessoa()
         {
@@ -50,6 +51,7 @@ namespace SistemaDeVendaLivros
                         string senha = Console.ReadLine();
                         if (modelo.Validacao(login, senha) == true)
                         {
+                            pessoaLogada = modelo.ProcuraNome(login);
                             Console.Clear();
                             controleLivro.SistemaLivro();
                             

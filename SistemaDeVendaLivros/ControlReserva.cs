@@ -10,7 +10,7 @@ namespace SistemaDeVendaLivros
     {
         int opcao;
         ModelReserva modeloReserva;
-        public string login;
+
         public ControlReserva()
         {
             modeloReserva = new ModelReserva();  
@@ -29,6 +29,7 @@ namespace SistemaDeVendaLivros
                 case 0:
                     break;
                 case 1:
+                    Console.WriteLine("Reserva realizada em sistema");
                     break;
                 default:
                     Console.WriteLine("Informe um opção válida");
