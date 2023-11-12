@@ -17,6 +17,7 @@ namespace SistemaDeVendaLivros
         double ValorLivro3;
         double ValorLivro4;
         public double soma;
+        string nomeLivro;
         public ModelLivro()
         {
             livro = 1;
@@ -33,58 +34,82 @@ namespace SistemaDeVendaLivros
         //Controle das quantidades de livros + o calculo da soma / valor total da compra
         public double Compra(int opcao)
         {
-            do
+            if (opcao == 0)
             {
-                if (opcao == 0)
+                if (livro > 0)
                 {
-                    if (livro > 0)
+                    livro = livro - 1;
+                    soma = soma + ValorLivro;
+                }
+                return soma;
+            }
+            else
+            {
+                if (opcao == 1)
+                {
+                    if (livro2 > 0)
                     {
                         livro = livro - 1;
-                        soma = soma + ValorLivro;
+                        soma = soma + ValorLivro2;
                     }
                     return soma;
                 }
                 else
                 {
-                    if (opcao == 1)
+                    if (opcao == 2)
                     {
-                        if (livro2 > 0)
+                        if (livro3 > 0)
                         {
                             livro = livro - 1;
-                            soma = soma + ValorLivro2;
+                            soma = soma + ValorLivro3;
                         }
                         return soma;
                     }
                     else
                     {
-                        if (opcao == 2)
+                        if (opcao == 3)
                         {
-                            if (livro3 > 0)
+                            if (livro4 > 0)
                             {
                                 livro = livro - 1;
-                                soma = soma + ValorLivro3;
+                                soma = soma + ValorLivro4;
                             }
                             return soma;
                         }
                         else
                         {
-                            if (opcao == 3)
-                            {
-                                if (livro4 > 0)
-                                {
-                                    livro = livro - 1;
-                                    soma = soma + ValorLivro4;
-                                }
-                                return soma;
-                            }
-                            else
-                            {
-                                return soma;
-                            }
+                            return soma;
                         }
                     }
                 }
-            }while(opcao != 0);
+            }
+        }
+
+        public string NomeLivro(int opcao)
+        {
+            if (opcao == 0)
+            {
+                nomeLivro = "Introdução ao C#";
+            }
+            else
+            {
+                if (opcao == 1)
+                {
+                    nomeLivro = "Introdução ao Python";
+                }
+                else
+                {
+                    if (opcao == 2)
+                    {
+                        nomeLivro = "Introdução ao VisualG";
+                    }
+                    else
+                    {
+                        nomeLivro = "Introdução a Banco de Dados";
+                    }
+                }
+            }
+            return nomeLivro;
         }
     }
 }

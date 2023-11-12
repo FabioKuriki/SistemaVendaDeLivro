@@ -12,7 +12,11 @@ namespace SistemaDeVendaLivros
         ModelPessoa modelo;
         int opcao;
         ControlLivro controleLivro;
-        public string pessoaLogada;
+        public string nomeLogado;
+        public int telefoneLogado;
+        public string enderecoLogado;
+        public int idLogado;
+        Boolean parar;
         //Método Construtor
         public ControlPessoa()
         {
@@ -34,7 +38,11 @@ namespace SistemaDeVendaLivros
 
         public void Acesso()
         {
-            modelo.EsvaziarVetor();
+            if (parar == false)
+            {
+                modelo.EsvaziarVetor();
+                parar = true;
+            }
             do
             {
                 Menu();
@@ -51,7 +59,14 @@ namespace SistemaDeVendaLivros
                         string senha = Console.ReadLine();
                         if (modelo.Validacao(login, senha) == true)
                         {
-                            pessoaLogada = modelo.ProcuraNome(login);
+                            nomeLogado = modelo.ProcuraNome(login);
+                            enderecoLogado = modelo.ProcuraEndereco(login);
+                            telefoneLogado = modelo.ProcuraTelefone(login);
+                            idLogado = modelo.ProcuraId(login);
+                            controleLivro.nomeLogado = nomeLogado;
+                            controleLivro.enderecoLogado = enderecoLogado;
+                            controleLivro.telefoneLogado = telefoneLogado;
+                            controleLivro.idLogado = idLogado;
                             Console.Clear();
                             controleLivro.SistemaLivro();
                             
@@ -113,7 +128,7 @@ namespace SistemaDeVendaLivros
                         modelo.Preenchimento(login, senha, nome, endereco, telefone, dia, mes, ano);
                         break;
                     case 3:
-                        modelo.MostrarVetor();
+                        modelo.MostrarVetor();//Consultar os dados de Cadastro
                         break;
                     default:
                         Console.WriteLine("Opção selecionada não é válida");

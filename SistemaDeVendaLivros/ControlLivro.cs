@@ -11,11 +11,17 @@ namespace SistemaDeVendaLivros
         int opcao;
         ModelLivro modeloLivro;
         ControlReserva controleReserva;
+        public string nomeLogado;
+        public string enderecoLogado;
+        public int telefoneLogado;
+        public int idLogado;
         public ControlLivro()
         {
             opcao = -1;
             modeloLivro = new ModelLivro();
             controleReserva = new ControlReserva();
+            
+
         }
 
         public void Escolha()
@@ -31,6 +37,10 @@ namespace SistemaDeVendaLivros
 
         public void SistemaLivro()
         {
+            controleReserva.nomeLogado = nomeLogado;
+            controleReserva.enderecoLogado = enderecoLogado;
+            controleReserva.telefoneLogado = telefoneLogado;
+            controleReserva.idLogado = idLogado;
             do
             {
                 Escolha();
@@ -38,6 +48,7 @@ namespace SistemaDeVendaLivros
                 switch (opcao)
                 {
                     case 0:
+                        controleReserva.nomeLivro = modeloLivro.NomeLivro(opcao);
                         if (modeloLivro.livro > 0)
                         {
                             Console.WriteLine("Total: R$" + modeloLivro.Compra(opcao));
@@ -45,10 +56,11 @@ namespace SistemaDeVendaLivros
                         }
                         else
                         {
-                            controleReserva.MenuReserva();
+                            controleReserva.SistemaReserva();
                         }
                         break;
                     case 1:
+                        controleReserva.nomeLivro = modeloLivro.NomeLivro(opcao);
                         if (modeloLivro.livro2 > 0)
                         {
                             Console.WriteLine("Total: R$" + modeloLivro.Compra(opcao));
@@ -56,10 +68,11 @@ namespace SistemaDeVendaLivros
                         }
                         else
                         {
-                            controleReserva.MenuReserva();
+                            controleReserva.SistemaReserva();
                         }
                         break;
                     case 2:
+                        controleReserva.nomeLivro = modeloLivro.NomeLivro(opcao);
                         if (modeloLivro.livro3 > 0)
                         {
                             Console.WriteLine("Total: R$" + modeloLivro.Compra(opcao));
@@ -67,10 +80,11 @@ namespace SistemaDeVendaLivros
                         }
                         else
                         {
-                            controleReserva.MenuReserva();
+                            controleReserva.SistemaReserva();
                         }
                         break;
                     case 3:
+                        controleReserva.nomeLivro = modeloLivro.NomeLivro(opcao);
                         if (modeloLivro.livro4 > 0)
                         {
                             Console.WriteLine("Total: R$" + modeloLivro.Compra(opcao));
@@ -78,7 +92,7 @@ namespace SistemaDeVendaLivros
                         }
                         else
                         {
-                            controleReserva.MenuReserva();
+                            controleReserva.SistemaReserva();
                         }
                         break;
                     case 4:

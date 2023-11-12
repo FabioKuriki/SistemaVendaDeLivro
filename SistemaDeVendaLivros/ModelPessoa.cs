@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SistemaDeVendaLivros
 {
-    class ModelPessoa
+    public class ModelPessoa
     {
         int[] id;
         string[] login;
@@ -21,6 +21,9 @@ namespace SistemaDeVendaLivros
         int[] ano;
         int i;
         string nomeLogado;
+        string enderecoLogado;
+        int telefoneLogado;
+        int idlogado;
         //Método Construtor
         public ModelPessoa()
         {
@@ -120,6 +123,40 @@ namespace SistemaDeVendaLivros
                 }
             }
             return nomeLogado;
+        }
+
+        public string ProcuraEndereco(string login2)
+        {
+            for (i = 0; i < 2; i++)
+            {
+                if (login2 == login[i])
+                {
+                    enderecoLogado = endereco[i];
+                }
+            }
+            return enderecoLogado;
+        }
+        public int ProcuraTelefone(string login2)
+        {
+            for (i = 0; i < 2; i++)
+            {
+                if (login2 == login[i])
+                {
+                    telefoneLogado = telefone[i];
+                }
+            }
+            return telefoneLogado;
+        }
+        public int ProcuraId(string login2)
+        {
+            for (i = 0; i < 2; i++)
+            {
+                if (login2 == login[i])
+                {
+                    idlogado = id[i];
+                }
+            }
+            return idlogado;
         }
     }
 }
